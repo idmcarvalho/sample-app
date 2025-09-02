@@ -34,4 +34,4 @@ func blueHandler(w http.ResponseWriter, r *http.Request) {
 	draw.Draw(img, img.Bounds(), &image.Uniform{color.RGBA{0, 0, 255, 255}}, image.ZP, draw.Src)
 	w.Header().Set("Content-Type", "image/png")
 	png.Encode(w, img)
-}
+}This is a change for the dev branch.
